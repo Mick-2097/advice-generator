@@ -1,6 +1,5 @@
 const button = document.querySelector('.dice')
 function getAdvice() {
-
     fetch('https://api.adviceslip.com/advice')
     .then(response => response.json())
     .then(data => {
@@ -11,4 +10,3 @@ function getAdvice() {
 button.addEventListener('click', event => {
     getAdvice()
 })
-
