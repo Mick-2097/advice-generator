@@ -1,0 +1,110 @@
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+* {
+    margin: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    font-family: 'Manrope', sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--Dark-Blue);
+    align-items: center;
+}
+main {
+    box-sizing: border-box;
+    width: 343px;
+    height: 315px;
+    background-color: var(--Dark-Grayish-Blue);
+    color: var(--Light-Cyan);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    margin: 120px 0 0 0;
+}
+h1 {
+    color: var(--Neon-Green);
+    font-size: 11px;
+    letter-spacing: 3.5px;
+    margin: 16px 0 24px 0;
+}
+p {
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: -0.4px;
+    margin: 0 0 24px 0;
+}
+.divider {
+    height: 16px;
+    width: 100%;
+    background-image: url(images/pattern-divider-mobile.svg);
+    background-size: auto;
+}
+.dice-bg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    background-color: var(--Neon-Green);
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+.attribution { 
+    color: var(--Light-Cyan);
+    font-size: 12px; 
+    text-align: center; 
+    letter-spacing: 2px;
+    margin: 0 0 10px 0;
+}
+.attribution a { 
+    color: var(--Neon-Green);
+}
+@media (min-width: 600px) {
+
+    body {
+        justify-content: center;
+    }
+    main {
+        width: 540px;
+        height: 332px;
+        margin: 0;
+        padding: 32px 50px;
+        border-radius: 14px;
+    }
+    h1 {
+        font-size: 13px;
+        letter-spacing: 4px;
+    }
+    p {
+        font-size: 28px;
+        letter-spacing: -0.3px;
+        margin: 0 0 40px 0;
+    }
+    .divider {
+        background-image: url(images/pattern-divider-desktop.svg);
+        background-position: center;
+    }
+}
